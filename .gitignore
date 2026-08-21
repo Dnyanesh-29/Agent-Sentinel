@@ -1,0 +1,42 @@
+﻿# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+*.key
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+dist/
+.vite/
+
+# ── Model weights (too large for Git — use Git LFS or download separately) ────
+# The final classifier lives in results/agent-sentinel-classifier/
+# See README.md → Setup → Download the Classifier for instructions.
+results/agent-sentinel-classifier/model.safetensors
+results/agent-sentinel-classifier/training_args.bin
+
+# Training checkpoints (intermediate, not needed for inference)
+results/results/
+
+# ── Kaggle notebook cache ─────────────────────────────────────────────────────
+results/.virtual_documents/
+
+# ── OS junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp

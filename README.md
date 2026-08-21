@@ -1,12 +1,12 @@
 ﻿# Agent Sentinel
 
-**A closed-loop system for identifying, simulating, and defending against prompt injection attacks on AI payment agents — built for the Mastercard Innovation Challenge 2026.**
+**A closed-loop system for identifying, simulating, and defending against prompt injection attacks on AI payment agents built for the Mastercard Innovation Challenge 2026.**
 
 ---
 
 ## The Problem
 
-Banks are beginning to deploy AI agents with real payment authority: agents that can approve transactions, waive fraud flags, and act on customer requests with minimal human oversight. These agents routinely read untrusted content — receipts, memos, support emails — to help them make decisions.
+Banks are beginning to deploy AI agents with real payment authority: agents that can approve transactions, waive fraud flags, and act on customer requests with minimal human oversight. These agents routinely read untrusted content  receipts, memos, support emails — to help them make decisions.
 
 This creates a direct attack surface. An adversary can embed hidden instructions inside an attached document, and if the agent treats that content as authoritative rather than as data, it may execute an unauthorized action: approving a fraudulent transaction, waiving a fraud flag, or bypassing verification — without the customer or the bank ever instructing it to do so.
 

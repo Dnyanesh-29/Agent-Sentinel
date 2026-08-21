@@ -47,19 +47,19 @@ The classifier was trained on a synthetic dataset generated using the Groq API �
 
 Training was iterative, with each round driven by observed failure modes:
 
-### v1 — Initial Dataset (~315 examples)
+### v1 - Initial Dataset (~315 examples)
 Seed patterns covering obvious attack types (system-override instructions, false authority claims, urgency framing, JSON-embedded commands). Fine-tuned DistilBERT for 4 epochs on a Kaggle 2×T4 GPU environment.
 
 **Result:** 85.7% accuracy on a hand-written out-of-distribution (OOD) test set.
 
 **Gap identified:** Recall was weak on subtle, conversational attacks — injections that sounded like plausible customer communication rather than explicit commands.
 
-### v2 — Targeted Recall Improvement
+### v2 - Targeted Recall Improvement
 Added targeted examples for the specific failure mode: conversational injections, indirect requests, social-engineering framing. Retrained.
 
 **Result:** Recall improved. New gap identified: precision — the model was flagging legitimate messages that mentioned concepts like "approval" or "following up" as false positives.
 
-### v3 — Contrastive Hard Negatives
+### v3 - Contrastive Hard Negatives
 Added "hard negative" examples: benign messages that used similar vocabulary to attacks but in genuine, non-injecting contexts. This gave the model the contrastive signal needed to distinguish surface-level similarity from actual injection intent.
 
 **Final result:** **92.9% accuracy** on the hand-written OOD test set. Validation metrics on the held-out synthetic split: ~99% accuracy / F1 / AUC.
@@ -180,7 +180,7 @@ Create a `.env` file in the project root:
 GROQ_API_KEY="your_groq_api_key_here"
 ```
 
-The key is read from the environment — it is never hardcoded in any source file.
+The key is read from the environment it is never hardcoded in any source file.
 
 ### 3. Download the classifier
 

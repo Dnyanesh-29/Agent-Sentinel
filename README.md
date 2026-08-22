@@ -205,7 +205,7 @@ The fine-tuned model weights (`model.safetensors`, ~255 MB) are excluded from th
 results/agent-sentinel-classifier/model.safetensors
 ```
 
-> **Download:** *(add your HuggingFace Hub / Kaggle / Google Drive link here)*
+> **Download:** *https://www.kaggle.com/models/dnyaneshbharambe/agent-sentinal-classifier*
 
 The remaining files in `results/agent-sentinel-classifier/` (`config.json`, `tokenizer.json`, `tokenizer_config.json`) are committed to the repo.
 

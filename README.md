@@ -4,7 +4,7 @@
 
 **Identify. Simulate. Defend.**
 
-A closed-loop system for studying and defending against prompt injection attacks on AI payment agents — built for the **Mastercard Innovation Challenge 2026**.
+A closed-loop system for studying and defending against prompt injection attacks on AI payment agents 
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev)
